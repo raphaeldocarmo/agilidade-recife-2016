@@ -1,0 +1,42 @@
+.border-radius-padrao{
+	 @include border-radius(5px);
+}
+
+.icone-itens{
+    font-family: 'icones' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.cover-background{ 
+	@include background-size(cover);
+}
+
+.border-box{
+	@include box-sizing(border-box);
+}
+.estilo-formularios{
+	font-weight:lighter;
+	padding: 1em 2em;
+	font-family: $font-padrao;
+	color: white;
+	font-size:1.5em;
+}
+
+.transition-padrao{
+	@include transition-duration(1s);
+  	@include transition-timing-function(ease);
+}
+
+.transition-rapido{
+	@include transition-duration(0.5s);
+  	@include transition-timing-function(ease);
+}

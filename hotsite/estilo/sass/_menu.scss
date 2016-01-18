@@ -1,0 +1,30 @@
+nav.menu {
+	width:100%;
+	text-align:right;
+	display:none;
+	.icon-menu{
+		display:none;
+	}
+
+	ul{
+		margin:0 2em 0 0; 
+		padding:0 1em;
+
+		li{
+			@extend .transition-rapido;
+			font-size:1.5em;
+			list-style-type:none;
+			display:inline-block;
+			padding: 0 1em;
+			margin: 2.5em 0;
+			cursor:pointer;
+
+			&:hover, &.selecionado{
+				background-color:white;
+				color: $cor-texto-cinza-padrao;
+  				padding: 2.5em 1em;
+  				margin: 0;
+			}
+		}
+	}
+}

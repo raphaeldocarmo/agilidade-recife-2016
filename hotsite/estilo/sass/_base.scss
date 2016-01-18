@@ -1,0 +1,101 @@
+*{
+	@extend .border-box;
+}
+body{
+	font-family: $font-padrao;
+	font-size: 14px;
+	font-weight:lighter;
+	color:white;
+	line-height: 1.25em;
+}
+
+h1, h2, h3{
+	font-weight:lighter;
+	line-height: 1.25em;
+}
+
+h1{
+	font-size: 4em;
+	margin: 2em 0;
+	font-weight:bold;
+	font-style:italic;
+	text-transform:uppercase;
+}
+
+h2, h3{
+	font-size: 2em;
+}
+
+h3{
+	margin: 2em 0 1em;
+	font-size: 4em;
+}
+
+header{
+	h1, nav{
+		vertical-align:top;
+		white-space: nowrap;
+		background: $cor-background;
+	}
+
+	h1{
+		background: $cor-background-escuro;
+	}
+}
+
+
+section{
+	article{
+		padding:100px 1em 1em;
+		text-align:center;
+		@extend .cover-background;
+		background-position: top right;
+		background-repeat:no-repeat;
+
+		&.home{
+			background-image: none;
+			background-color:$laranja-padrao;
+		}
+		&.sobre{
+			background-image: none;
+			background-color:#06ac6a;
+		}
+
+		&.contato{
+			background-image: none;
+			background-color:#eee;
+			color:$cor-texto-cinza-padrao;
+			form{
+				margin:50px;
+				text-align:center;
+			}
+		}
+	}
+
+}
+
+footer{
+
+}
+
+.logo{
+	margin: 0.3em;
+	max-width:260px;
+}
+
+.link-newsletter{
+	display:block;
+	padding:1em 2em;
+		background-color: darken($laranja-padrao, 15%);
+	color:white;
+	font-size:1.5em;
+	width:300px;
+	margin:1em auto;
+	text-decoration: none;
+	@extend .transition-padrao;
+	@extend .border-radius-padrao;
+
+	&:hover{
+		background-color: darken($laranja-padrao, 30%)
+	}
+}

@@ -1,0 +1,44 @@
+@media screen and (min-width: 768px) {
+	body{
+		zoom: 1;
+	}
+
+	header{
+		position:fixed;
+		top: 0;
+		right: 0;
+		left:0;
+
+		.logo{
+			width:230px;
+		}
+
+		.menu, h1{
+			display:table-cell;
+		}
+	}
+
+	section{
+		article{
+			padding:100px 1em 1em;
+			text-align:center;
+
+			&.home{
+				background-image: url("../imgs/background-01.jpg"), url("../imgs/icone-transparent.svg");
+			}
+			&.sobre{
+				background-image: url("../imgs/background-02.jpg"), url("../imgs/icone-transparent.svg");
+			}
+
+			&.contato{
+				background-image: url("../imgs/background-03.jpg"), url("../imgs/icone-transparent.svg");
+				color:$cor-texto-cinza-padrao;
+				form{
+					margin:50px;
+					text-align:center;
+				}
+			}
+		}
+
+	}
+}

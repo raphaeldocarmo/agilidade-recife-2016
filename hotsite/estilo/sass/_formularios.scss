@@ -1,0 +1,30 @@
+input{
+	border: 1px solid rgba(0,0,0,0.2);
+	background-color: white;
+	@extend .estilo-formularios;
+	@extend .transition-padrao;
+
+	&:hover{
+		background-color:$cor-background;
+		color:white;
+	}
+}
+button{
+	padding: 1em 2em;
+	margin: 0.5em 0;
+	background-color: $laranja-padrao;
+	border: 0 solid transparent;
+	@extend .estilo-formularios;
+	@extend .transition-padrao;
+	cursor:pointer;
+
+	&:hover{
+		background-color: darken($laranja-padrao, 15%);
+	}
+}
+
+input, button{
+	display: table-cell;
+	white-space:nowrap;
+
+}

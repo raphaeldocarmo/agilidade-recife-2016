@@ -1,0 +1,290 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+.border-radius-padrao, .link-newsletter {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+
+.icone-itens {
+  font-family: 'icones' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.cover-background, section article {
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.border-box, * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.estilo-formularios, input, button {
+  font-weight: lighter;
+  padding: 1em 2em;
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-size: 1.5em;
+}
+
+.transition-padrao, .link-newsletter, input, button {
+  -moz-transition-duration: 1s;
+  -o-transition-duration: 1s;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+
+.transition-rapido, nav.menu ul li {
+  -moz-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -moz-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  -webkit-transition-timing-function: ease;
+  transition-timing-function: ease;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  font-weight: lighter;
+  color: white;
+  line-height: 1.25em;
+}
+
+h1, h2, h3 {
+  font-weight: lighter;
+  line-height: 1.25em;
+}
+
+h1 {
+  font-size: 4em;
+  margin: 2em 0;
+  font-weight: bold;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+h2, h3 {
+  font-size: 2em;
+}
+
+h3 {
+  margin: 2em 0 1em;
+  font-size: 4em;
+}
+
+header h1, header nav {
+  vertical-align: top;
+  white-space: nowrap;
+  background: rgba(0, 0, 0, 0.5);
+}
+header h1 {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+section article {
+  padding: 100px 1em 1em;
+  text-align: center;
+  background-position: top right;
+  background-repeat: no-repeat;
+}
+section article.home {
+  background-image: none;
+  background-color: #ffb33c;
+}
+section article.sobre {
+  background-image: none;
+  background-color: #06ac6a;
+}
+section article.contato {
+  background-image: none;
+  background-color: #eee;
+  color: #444;
+}
+section article.contato form {
+  margin: 50px;
+  text-align: center;
+}
+
+.logo {
+  margin: 0.3em;
+  max-width: 260px;
+}
+
+.link-newsletter {
+  display: block;
+  padding: 1em 2em;
+  background-color: #ef9200;
+  color: white;
+  font-size: 1.5em;
+  width: 300px;
+  margin: 1em auto;
+  text-decoration: none;
+}
+.link-newsletter:hover {
+  background-color: #a26300;
+}
+
+nav.menu {
+  width: 100%;
+  text-align: right;
+  display: none;
+}
+nav.menu .icon-menu {
+  display: none;
+}
+nav.menu ul {
+  margin: 0 2em 0 0;
+  padding: 0 1em;
+}
+nav.menu ul li {
+  font-size: 1.5em;
+  list-style-type: none;
+  display: inline-block;
+  padding: 0 1em;
+  margin: 2.5em 0;
+  cursor: pointer;
+}
+nav.menu ul li:hover, nav.menu ul li.selecionado {
+  background-color: white;
+  color: #444;
+  padding: 2.5em 1em;
+  margin: 0;
+}
+
+/*@import "_icones";*/
+input {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+input:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+}
+
+button {
+  padding: 1em 2em;
+  margin: 0.5em 0;
+  background-color: #ffb33c;
+  border: 0 solid transparent;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #ef9200;
+}
+
+input, button {
+  display: table-cell;
+  white-space: nowrap;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    zoom: 1;
+  }
+
+  header {
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+  }
+  header .logo {
+    width: 230px;
+  }
+  header .menu, header h1 {
+    display: table-cell;
+  }
+
+  section article {
+    padding: 100px 1em 1em;
+    text-align: center;
+  }
+  section article.home {
+    background-image: url("../imgs/background-01.jpg"), url("../imgs/icone-transparent.svg");
+  }
+  section article.sobre {
+    background-image: url("../imgs/background-02.jpg"), url("../imgs/icone-transparent.svg");
+  }
+  section article.contato {
+    background-image: url("../imgs/background-03.jpg"), url("../imgs/icone-transparent.svg");
+    color: #444;
+  }
+  section article.contato form {
+    margin: 50px;
+    text-align: center;
+  }
+}
